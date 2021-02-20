@@ -5,4 +5,11 @@ To use this program you will need a Last.fm account with data from before you Sp
 
 There's always the chance that your Last.fm listening data may not map perfectly onto Spotify tracks. Tracks which were not able to added to the playlist are logged in standard output so you can choose how to proceed.
 
+## Usage
+1. Ensure you have the relevant environment variables set
+2. Download `wrapped_generator.py` into some directory
+3. `cd` to the directory in a terminal
+4. Do `python3 wrapped_generator.py year`
+5. Check Spotify
+
 This is pretty quick and dirty so feedback is welcomed.
