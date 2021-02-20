@@ -1,4 +1,5 @@
 import os
+import sys
 import requests
 from bs4 import BeautifulSoup as bs
 
@@ -14,7 +15,7 @@ lastfm_username = os.environ['LASTFM_USERNAME']
 
 scope = 'playlist-modify-public'
 
-year = '2016' # Year to generate wrapped playlist for
+year = sys.argv[1] # Year to generate wrapped playlist for
 
 base_url = f'https://www.last.fm/user/{lastfm_username}/library/tracks?from={year}-01-01&to={year}-12-31&page='
 
@@ -79,8 +80,7 @@ def search_for_spotify_tracks(tracks):
             spotify_tracks.append(str(uri))
 
         else:
-            print('Track not found on Spotify:')
-            print(track[0] + ': ' + track[1])
+            print(f'Track not found on Spotify: {track[0]}: {track[1]}')
 
     return spotify_tracks
 
