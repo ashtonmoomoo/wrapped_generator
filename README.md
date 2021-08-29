@@ -1,3 +1,6 @@
+# _Deprecated_
+Check out the _slightly_ more polished version of this functionality [here](https://lastfm2wrapped.herokuapp.com/app/), with code [here](https://github.com/ashtonmoomoo/lastfm2wrapped).
+
 # wrapped_generator
 Generate a "Spotify Wrapped" playlist for a given year using historic Last.fm data.
 
